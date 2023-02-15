@@ -28,7 +28,7 @@ public class RockPaperScissors {
     }
 
     String winnerName(int ct, int mt) {
-// [TODO] Подумать, как посчитать кто выйграл, зная кто что выкинул в виде чисел (0 - Бумага, 1 - Ножницы, 2 - Камень)
+        // (0 - Бумага, 1 - Ножницы, 2 - Камень)
         if (ct == 0) {
             if (mt == 0) {
                 return "noone";
@@ -88,7 +88,7 @@ public class RockPaperScissors {
         }
 
         public int getTurn() {
-            System.out.println("Your turn, man! >>>");
+            System.out.print("Your turn, man! >>>");
             int turn = input.nextInt();
             System.out.println("Your turn is " + turn);
             return turn;
